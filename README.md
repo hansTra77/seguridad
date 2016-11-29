@@ -21,32 +21,41 @@ El programa se realizó previa investigación haciendo uso de las librerías jav
 A continuación, se muestran fragmentos del código.
 
 ```java
-public static void encrypt(byte[] stringToEncrypt) {
+   public static void decrypt(byte[] stringToDecrypt, String extension) {
     	
         try {
         	
-            Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");        
-            cipher.init(Cipher.ENCRYPT_MODE, secretKey);
-            setEncryptBytes(Base64.encodeBase64String(cipher.doFinal(stringToEncrypt)));
-        
-        } catch (Exception e) {
+        	FileOutputStream fos = new FileOutputStream("c:/Users/casa/Desktop/myfiledes" + "." + extension);
+            Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5PADDING");
+            cipher.init(Cipher.DECRYPT_MODE, secretKey);
+            CipherOutputStream cout = new CipherOutputStream(fos, cipher);
+            cout.write(stringToDecrypt);     
+            fos.flush();
+            cout.close();
             
+        } catch (Exception e) {
+         
         	e.printStackTrace();
         	
         }
         
     }
     
-    public static void decrypt(byte[] stringToDecrypt) {
+    public static void encrypt(byte[] stringToEncrypt, String extension) {
     	
         try {
         	
-            Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5PADDING");
-            cipher.init(Cipher.DECRYPT_MODE, secretKey);
-            setDecryptBytes(new String(cipher.doFinal(Base64.decodeBase64(stringToDecrypt))));
-            
+        	FileOutputStream fos = new FileOutputStream("c:/Users/casa/Desktop/myfile" + "." + extension);
+            Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding"); 
+            cipher.init(Cipher.ENCRYPT_MODE, secretKey);
+            //setEncryptBytes(Base64.encodeBase64String(cipher.doFinal(stringToEncrypt)));
+            CipherOutputStream cout = new CipherOutputStream(fos, cipher);
+            cout.write(stringToEncrypt);
+            fos.flush();
+            cout.close();
+        
         } catch (Exception e) {
-         
+            
         	e.printStackTrace();
         	
         }
