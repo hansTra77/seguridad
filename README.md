@@ -126,20 +126,20 @@ Los archivos resultantes se pueden observar a continuación.
 * Finalmente se observó uno de los usos de los algoritmos de hash y porque son tan importantes, este es el poder confirmar la integridad o no de un archivo tras realizarse por ejemplo un cifrado y descifrado sobre este.
 
 ## Referencias
-https://docs.oracle.com/javase/7/docs/api/javax/crypto/spec/SecretKeySpec.html
-https://es.wikipedia.org/wiki/Secure_Hash_Algorithm
-https://docs.oracle.com/javase/7/docs/api/java/security/MessageDigest.html
-http://programtalk.com/java-api-usage-examples/java.security.MessageDigest/
-http://commons.apache.org/proper/commons-io/download_io.cgi
-https://commons.apache.org/proper/commons-codec/download_codec.cgi
-http://www.lawebdelprogramador.com/foros/Java/1113731-Encriptar-Archivos.html
-http://muchojava.com/como-crear-programa-para-cifrar-archivos-con-cifrado-aes/
-http://www.jc-mouse.net/java/encriptacion-simetrica-en-java
-https://bit502.wordpress.com/2014/06/27/codigo-java-encriptar-y-desencriptar-texto-usando-el-algoritmo-aes-con-cifrado-por-bloques-cbc-de-128-bits/
-http://pastebin.com/h6DaAPha
-http://stackoverflow.com/questions/4895523/java-string-to-sha1
-http://stackoverflow.com/questions/2091014/get-real-file-extension-java-code
-http://stackoverflow.com/questions/12136558/encryption-and-decryption-of-image-file
+* https://docs.oracle.com/javase/7/docs/api/javax/crypto/spec/SecretKeySpec.html
+* https://es.wikipedia.org/wiki/Secure_Hash_Algorithm
+* https://docs.oracle.com/javase/7/docs/api/java/security/MessageDigest.html
+* http://programtalk.com/java-api-usage-examples/java.security.MessageDigest/
+* http://commons.apache.org/proper/commons-io/download_io.cgi
+* https://commons.apache.org/proper/commons-codec/download_codec.cgi
+* http://www.lawebdelprogramador.com/foros/Java/1113731-Encriptar-Archivos.html
+* http://muchojava.com/como-crear-programa-para-cifrar-archivos-con-cifrado-aes/
+* http://www.jc-mouse.net/java/encriptacion-simetrica-en-java
+* https://bit502.wordpress.com/2014/06/27/codigo-java-encriptar-y-desencriptar-texto-usando-el-algoritmo-aes-con-cifrado-por-bloques-cbc-de-128-bits/
+* http://pastebin.com/h6DaAPha
+* http://stackoverflow.com/questions/4895523/java-string-to-sha1
+* http://stackoverflow.com/questions/2091014/get-real-file-extension-java-code
+* http://stackoverflow.com/questions/12136558/encryption-and-decryption-of-image-file
 
 
 [1]: final/0.JPG
